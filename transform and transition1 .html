@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transforms and transition-1</title>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<h2><center><br>Transform and transition-1<br></center></h2>
+
+	<style type="text/css">
+		.div1{
+			height: 150px;
+			width: 150px;
+			background-image: url(https://e0.pxfuel.com/wallpapers/430/730/desktop-wallpaper-nature-lover-nature-flowers-amazing-nature-butterfly-thumbnail.jpg);
+			background-size: cover;
+			/*transform: translateX(30px);*/
+			/*transform: translateY(30px);*/
+			/*transform: translate(50px,25px);*/
+			/*transform: rotate(360deg);*/
+			/*transform: scaleX(1);*/
+			/*transform: scaleY(2);*/
+			transform: skew(20deg);
+
+		
+		}
+		.div1:hover{
+			transform: rotateX(360deg);
+			background-image: url(https://w0.peakpx.com/wallpaper/122/921/HD-wallpaper-bird-animal-nature.jpg);
+			background-size: cover;
+			transition-property: transform,background-image;
+			transition-duration: 2s;
+		}
+		@media screen and(max-width: 720px){
+			.div1{
+				height: 280px;
+				width: 280px;
+				background: gold;
+				transition-property: transform,background width,height 4s;
+				transform: rotate(25deg);
+				transition: transform,background;
+				transition-delay: 1s;
+			}
+
+		}
+
+		.div2{
+			height: 150px;
+			width: 150px;
+			background-image:url(https://cdnb.artstation.com/p/assets/images/images/061/563/891/large/mai-art-20230410-060533.jpg?1681131176);
+            background-size: cover; 
+			
+
+		}
+		.div2:hover{
+			transform: rotate(360deg);
+			background-image: url(https://w0.peakpx.com/wallpaper/229/1000/HD-wallpaper-moon-black-girl-love-magic-mood-night.jpg);
+			background-size: cover;
+			transition-property: transform,background-image;
+			transition-duration: 2s;
+
+		}
+		/*min width apply css to element when the device width>give px;*/
+		/*min width apply css to element when the device width>give px;*/
+		@media screen and (max-width: 720px ){
+			.div2{
+				hight: 280px;
+				width: 280px;
+				background: gold;
+				/*transition-property: transform,background;*/
+			    transition-duration: 2s;
+				transform: rotation(25deg);
+				transition: transform,background,width,height 2s;
+
+				transition-delay: 2s;
+
+			}
+		}
+	</style>
+</center>
+</head>
+
+<body style="display:flex;justify-content: center;align-items: center;height: 90hv">
+     
+	<div class="div1"></div>
+	<div class="div2"></div>
+
+</body>
+</html>
+		
